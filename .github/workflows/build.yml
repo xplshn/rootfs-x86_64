@@ -25,7 +25,7 @@ jobs:
         sudo apt-get install -y bison curl libarchive-tools lua5.1 nasm ninja-build wayland-protocols libwayland-dev libpng-dev
         git config --global user.name "oasis"
         git config --global user.email "oasis"
-        git clone --mirror https://github.com/xplshn/root-x86_64 root-x86_64.git
+        git clone --mirror https://github.com/xplshn/rootfs-x86_64 root-x86_64.git
         curl -LO http://musl.cc/x86_64-linux-musl-cross.tgz
         tar xzf x86_64-linux-musl-cross.tgz
         echo "$HOME/x86_64-linux-musl-cross/bin:$HOME/bin" >> $GITHUB_PATH
